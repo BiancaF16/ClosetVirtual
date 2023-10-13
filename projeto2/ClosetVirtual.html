@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ClosetVirtual.css">
+    <title>Closet Virtual</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <header>
+        <nav class="nav-bar">
+            <img src="image/logo.png" class="logo">
+
+            <div class="nav-list">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#prod" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="#promo" class="nav-link">Promoções</a></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link">Usuários</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <button id="abrirCart"><img src="image/iconSacola.png"></button>
+            </div>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrinho de compras -->
+
+    <div class="carrinhoCompras">
+        <h3>Carrinho</h3>
+        <ul class="listaProdutos" id="carrinho"></ul>
+        <div class="totalDiv">
+            <p>Total: <span class="total">R$ 0.00</span></p>
+
+        </div>
+        <button class="fecharCarrinho">x</button>
+    </div>
+
+    <!-- CADASTRE-SE -->
+
+    <div class="marketing">
+        <img src="image/virtual.jpeg" alt="">
+    </div>
+
+    <!-- SLIDE ROUPAS -->
+
+    <ul class="slider">
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="image/vestidos2.png">
+        </li>
+        <li>
+            <input type="radio" id="slide2" name="slide">
+            <label for="slide2"></label>
+            <img src="image/tops.png">
+        </li>
+        <li>
+            <input type="radio" id="slide3" name="slide">
+            <label for="slide3"></label>
+            <img src="image/calças.png">
+        </li>
+    </ul>
+
+    <!-- ANÚNCIO CUPOM -->
+
+    <div class="visual">
+        <img src="image/cupom.png" alt="cupomdedesconto">
+    </div>
+
+    <!-- SESSÃO DE PRODUTOS -->
+
+    <section class="produtos" id="prod">
+        <div class="cardCt" id="containerProdutos">
+            <div class="cardPd" data-index="0">
+                <div class="img">
+                    <img src="image/vestido.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Vestido Rodado </h3>
+                    <div class="price">R$45,90 <span>R$60,00</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="1">
+                <div class="img">
+                    <img src="image/croppedbranco.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cropped Crochê</h3>
+                    <div class="price">R$15,99 <span>R$25,90</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="2">
+                <div class="img">
+                    <img src="image/blusacinza.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cropped Alcinha</h3>
+                    <div class="price">R$14,70 <span>R$22.90</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="3">
+                <div class="img">
+                    <img src="image/tomaraquecaia.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Tomara que caia</h3>
+                    <div class="price">R$30,99 <span>R$40.00</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="4">
+                <div class="img">
+                    <img src="image/moletom.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Moletom</h3>
+                    <div class="price">R$50,00 <span>R$80,00</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="5">
+                <div class="img">
+                    <img src="image/blusalistrada.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cropped Listrado</h3>
+                    <div class="price">R$35,99 <span>R$40,00</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="6">
+                <div class="img">
+                    <img src="image/blusa.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Croppred Alcinha</h3>
+                    <div class="price">R$14,50 <span>R$16,99</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="7">
+                <div class="img">
+                    <img src="image/croppedcogumelo.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cropped Crochê</h3>
+                    <div class="price">R$28,99 <span>R$50,00</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+
+            <div class="cardPd" data-index="8">
+                <div class="img">
+                    <img src="image/croppedbrancoestrela.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cropped Crochê</h3>
+                    <div class="price">R$15,99 <span>R$30,00</span></div>
+                </div>
+                <button class="carro"><img src="image/carrinho.png" alt=""></button>
+                <button class="lixo"><img src="image/iconLixeira.png" alt=""></button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- PROMOÇÃO 10.10 -->
+
+        <div class="promo" id="promo">
+            <img src="image/promoção.png" alt="">
+        </div>
+
+    <!-- ADICIONAR PRODUTOS -->
+
+    <main class="cards" id="containerCard">
+        <section class="card">
+            <div class="iconAdcMais">
+                <img src="image/iconAdc.png">
+            </div>
+
+            <button class="cadastrarPd" onclick="teste()">Adicionar Produto</button>
+
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>ClosetVirtual</h1>
+                <p>O desapego está na moda</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/accounts/edit/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjD7Kyk8cuBAxX1mcIIHRPOCwEYABAAGgJqZg&ase=2&gclid=Cj0KCQjwpc-oBhCGARIsAH6ote-kJY9REgmu4qJ71-xuSeH6YFV2QIfiQJZV6G0unDhAOioHcOKN7RQaAuiQEALw_wcB&ohost=www.google.com&cid=CAESbeD2LZWXC6zwsFTPz6sQsyARRx5evj-5CoXgcfUpn_j_wAXZa2v70Xv9vRyKKxz8KwbpIyX1GkBDYjiSeqK4NWF6LOfc3YnyvjljtkICQ2E7XQ5arvUWFQvtSlMiRS2yXHu5mvh3yNkNrQriGEo&sig=AOD64_3dSUHPaUoJRbX5q8wFuHiUmNEVHQ&q&nis=4&adurl&ved=2ahUKEwiJjaCk8cuBAxVor5UCHfjvAtEQ0Qx6BAgGEAE" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.whatsapp.com/?lang=pt_BR" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Suporte</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Devolução</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Como pedir</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Guia de tamanhos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Política de frete</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Informações</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre Closet Virtual</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Locais</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Social</a>
+                </li>
+                <li>    
+                    <a href="#" class="footer-link">Carreiras</a>
+                    </li>
+                </ul>
+
+            <div id="footer_subscribe">
+                <h3>Contate-nos</h3>
+
+                <p>
+                    Mande seu e-mail para ver as novidades
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+                <p>SAC : (85) 93089 - 5634</p>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+
+    <!-- MODAL POPUP -->
+
+    <section id="modaljs" class="modal">
+
+        <div class="popUp">
+            <div class="titulo">
+                <h2>Cadastre seu produto</h2>
+                <button class="fecharpopUp" id="fecharPop">X</button>
+            </div>
+            <form class="formulario">
+                <div class="formCt">
+                    <div class="label-quadrado">
+                        <input type="text" id="nomeProd" placeholder=" " required>
+                        <label id="labelProd" for="nomeProd">Nome do Produto</label>
+
+                    </div>
+
+                    <div class="label-quadrado">
+                        <input type="number" id="precoProd" placeholder=" " step=".01" required>
+                        <label id="labelPrice" for="precoProd">Preço</label>
+
+                    </div>
+                    <button onclick="saveProduct()" class="btnProduto">Postar</button>
+                </div>
+                <div class="upload">
+                    <label class="picture" for="pictureInput" tabIndex="0">
+                        <span class="pictureImage">Escolha um arquivo</span>
+                    </label>
+                    <input type="file" accept="image/*" id="pictureInput">
+                </div>
+        </div>
+        </form>
+    </section>
+
+    <script src="ClosetVirtual.js"></script>
+</body>
+
+</html>

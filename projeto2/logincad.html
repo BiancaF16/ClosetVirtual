@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="logincad.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="tela-esquerda"></div>
+    <div class="tela-login">
+        <div class="forms-login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" id="emailLogin" required autocomplete="off">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" id="iconContainer" id="btnMostrar">
+                        <ion-icon name="eye-outline" onclick="showMostrar()"></ion-icon>
+                    </span>
+                    <input type="password" id="senhaLogin" required autocomplete="off">
+                    <label>Senha</label>
+                </div>
+                
+                
+                <div class="checkbox-wrapper-1">
+                    <input id="example-1-login" class="substituted" type="checkbox" aria-hidden="true" />
+                    <label for="example-1-login">Lembre-se de mim</label>
+                </div>
+                <button onclick='entrar()' type="submit" class="button-27">Login</button>
+                <div class="login-registro">
+                <p>Não tem uma conta? <a href="#" class="link-registro">Registre-se</a></p>
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <div class="forms-registro">
+            <h2>Registre-se</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" id="usuario" required autocomplete="off">
+                    <label id="labelUsuario">Usuário</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" id="email" required autocomplete="off">
+                    <label id="labelEmail">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon" id="iconContainerRegistro">
+                        <ion-icon name="eye-outline" onclick="showMostrarRegistro()"></ion-icon>
+                    </span>
+                    <input type="password" id="senha" required autocomplete="off">
+                    <label id="labelSenha">Senha</label>
+                    
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" id="confirmSenha" required autocomplete="off">
+                    <label id="labelConfirmSenha">Confirmar Senha</label>
+                </div>
+                <div class="checkbox-wrapper-1">
+                    <input id="example-1-registro" class="substituted" type="checkbox" aria-hidden="true" />
+                    <label for="example-1-registro">Você aceita os <a href="termodeuso.html" target="_blank">termos de uso</a>?</label>
+                </div>
+
+                <button onclick='criarConta()' type="submit" class="button-27" role="button">Registre-se</button>
+                <div class="login-registro">
+                <p>Já tem uma conta? <a href="#" class="link-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="logincad.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>
+
+
+
+  
